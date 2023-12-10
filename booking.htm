@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking page</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./booking.css">
+</head>
+
+<body id="bookpagemain">
+    <header>
+        <!--logo-->
+        <h1 id="logo">
+            <img src="./new-logo-araliya-main-big.svg" alt="Logo of the website">
+        </h1>
+        <!--Navigationn Bar-->
+        <nav id="nav">
+            <a href="./Home.html">HOME</a>
+            <a href="./Rooms.html">ROOMS</a>
+            <a href="./Branches.html">BRANCHES</a>
+            <a href="./dining.html">DINING</a>
+            <a href="./Explore.html">EXPLORE</a>
+            <a href="./gallery.htm">GALLERY</a>
+        
+                <button>BOOK NOW</button>
+
+        </nav>
+
+        <h2>
+            ARALIYA BEACH RESORT
+        </h2>
+
+    </header>
+    <div class="gal">
+        <div class="container1">
+            <h2 class="hd">Reservations</h2>
+            <div class="para">Book directly from the website and avail a range of extra benefits Best Rate Guarantee,
+                Late Checkout Facility (on availability) & Priority Service </div>
+        </div>
+        <div id="why">
+            <img src="./Room booknw.jpg" alt="Backgroundimg" >
+        </div>
+    </div>
+
+    <div class="back">
+        <h1 class="head-1">Book Your Rooms Online</h1>
+        <table >
+
+            <thead>
+
+                <tr>
+                    <th>category</th>
+                    <th>Cost in LKR </th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>Single Rooms</td>
+                    <td>25,000.00</td>
+                </tr>
+                <tr>
+                    <td>Double Rooms</td>
+                    <td>35,000.00</td>
+                </tr>
+                <tr>
+                    <td>Triple Rooms</td>
+                    <td>40,000.00</td>
+                </tr>
+                <tr>
+                    <td>Kids above 5 years of age</td>
+                    <td>5000.00 extra for meals</td>
+                </tr>
+                <tr>
+                    <td>Extra Bed</td>
+                    <td>8000.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td  class="foots">
+                        infos from araliyaresorts</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="bf-footer1">
+        <button class="A-button" id="btnAddToFavourite">Add to favourite</button>
+    </div>
+    
+
+    <!--form to book rooms-->
+
+    <div class="form">
+        <div class="book-room">
+            <h3 id="hed">Book Your Stay</h3>
+
+            <form action="#" method="get" id="roomsBook">
+
+                
+                 <fieldset>
+                    <p>
+                        <label>Full Name</label><br>
+                        <input type="text" placeholder="First Name Last Name" id="namee" name="namee"><br>
+                    </p>
+                    <p>
+                        <label>Email</label><br>
+                        <input type="text" placeholder="Email_Address" id="mail" name="mail"><br>
+                    </p>
+                    <p>
+                        <label >Telephone-number</label><br>
+                        <input type="text" placeholder="Mob_Num" name="num" id="num"><br><br>
+                    </p>
+                    <p>
+                        <label>Check-in-date</label>
+                        <input type="date" name="indate" id="indate"><br>
+                    </p>
+                    <p>
+                        <label>Check-out-date</label>
+                        <input type="date"  name="outdate" id="outdate"><br>
+                    </p>
+                    <p>
+                        <label>Promo Code</label>
+                        <input type="text" placeholder="Promo_Code" name="Promo_Code" id="promoCode" value=""><br>
+                    </p>
+                    <p>
+                        <label>Number of Adults</label>
+                        <input type="number" placeholder="Number of adults" name="Adults" id="Adults" min="0"
+                            value="0"><br>
+                    </p>
+                    <p>
+                        <label>Number of kids above 5 years</label>
+                        <input type="number" placeholder="Number of kids above 5 years" name="kids" id="kids" min="0"
+                            value="0"><br>
+                    </p>
+                    <p>
+                        <label>Number of Extra Bed Per Room</label>
+                        <input type="number" placeholder="Number of extrabeds" name="extrabeds" id="extrabeds" min="0"
+                            value="0"><br>
+                    </p>
+                 </fieldset>
+                    <fieldset id="extras">
+                        <legend>Extra Requirement</legend>
+                        
+                        <p>
+                            <label for="wifi">Wifi</label>
+                            <input type="checkbox" id="wifi">
+                            
+                            <label for="poolview">Pool View</label>
+                            <input type="checkbox" id="poolview">
+                            
+                            <label for="gardenview">Garden View</label>
+                            <input type="checkbox" id="gardenview">
+                        </p>
+                    </fieldset>
+                    
+                    <fieldset id="roomhere">
+                        <legend>Room Booking</legend>
+                        
+                        <div>
+                            <h3>Single Room Booking</h3>
+                            <p>
+                                <label for="noOfsingle">Number of Rooms :</label>
+                                <input type="number" name="noofroomsingle" id="noOfsingle" min="0" value="0">
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <h3>Double Room Booking</h3>
+                            <p>
+                                <label for="noOfdouble">Number of Rooms :</label>
+                                <input type="number" name="noofroomdouble" id="noOfdouble" min="0" value="0">
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <h3>Triple Room Booking</h3>
+                            <p>
+                                <label for="noOftriple">Number of Rooms :</label>
+                                <input type="number" name="noofroomtriple" id="noOftriple" min="0" value="0">
+                            </p>
+                        </div>
+                    </fieldset>
+                    
+                
+                <!--cost of rooms-->
+                <fieldset id="set">
+                    <legend>Cost of Rooms</legend>
+                    <div id="costroom"></div>
+                </fieldset>
+                <p id="currentcost"></p>
+
+                <button type="submit" id="bookroom">BOOK NOW</button>
+                <button type="submit" id="loyal">CHECK LOYALTY</button>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="backgrnd">
+        <h1 class="head-1">Overall Booking</h1>
+        <table >
+
+            <thead>
+
+                <tr>
+                    <th>Room Pricings</th>
+                    <th>Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>Single Rooms</td>
+                    <td id="singleRoomCost"></td>
+                </tr>
+                <tr>
+                    <td>Double Rooms</td>
+                    <td id="doubleRoomCost"></td>
+                </tr>
+                <tr>
+                    <td>Triple Rooms</td>
+                    <td id="Triple"></td>
+                </tr>
+                <tr>
+                    <td>Kids above 5 years of age</td>
+                    <td id="abv5"></td>
+                </tr>
+                <tr>
+                    <td>Extra Bed</td>
+                    <td id="Extrabed"></td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td id="totalCost"></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td >Enjoy Your Stay</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <div class="experience">
+        <h2>Diving Experience Pricing</h2>
+
+        <div class="pricing">
+            <ul class="pricing-list" >
+                <li class="pricing-item">
+                    <span class="pricing-label">Diving for Local Adults (1 hr)</span>
+                    <span class="pricing-value">5000LKR</span>
+                </li>
+
+                <li class="pricing-item">
+                    <span class="pricing-label">Diving for Local Kids (Above 5 years)</span>
+                    <span class="pricing-value">2000LKR</span>
+                </li>
+
+                <li class="pricing-item">
+                    <span class="pricing-label">Diving for Foreign Adults</span>
+                    <span class="pricing-value">10000LKR</span>
+                </li>
+
+                <li class="pricing-item">
+                    <span class="pricing-label">Diving for Foreign Kids</span>
+                    <span class="pricing-value">5000LKR</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+        <form action="#" id="advenBook">
+
+            <fieldset id="Adventure">
+                <legend>Diving Experience</legend>
+                <p class="inputbox">
+                    <label>FullName</label>
+                    <input type="text" placeholder="fullName" name="name" id="name" ><br>
+                </p>
+                <p class="inputbox">
+                    <label>Number of Sl Adults</label>
+                    <input type="number" placeholder="No_of_Adults" name="sladult" id="sladult"  min="0" value="0"><br>
+                </p>
+                <p class="inputbox">
+                    <label>Number of Sl Children</label>
+                    <input type="number" placeholder="No_of_Rooms" name="slchild" id="slchild" min="0" value="0"><br>
+                </p>
+                <p class="inputbox">
+                    <label>Number of foreign Adults</label>
+                    <input type="number" placeholder="No_of_Rooms" name="foreignadult" id="foreignadult" min="0"
+                        value="0"><br>
+                </p>
+                <p class="inputbox">
+                    <label>Number of Foreign Children</label>
+                    <input type="number" placeholder="No_of_Rooms" name="foreigKid" id="foreignKid" min="0" value="0"><br>
+                </p>
+                                <!-- Tour Guides for Adults -->
+                                            <!-- Tour Guides for Adults -->
+                
+                  <h4>Tour Guides for Adults</h4>
+                    <p>
+                        <input type="checkbox" id="Adultguide" name="guideAdventure" value="yes">
+                        <label for="Adultguide"></label>
+                    </p>
+                                            
+                                    
+                 <h4>Tour Guides for Kids</h4>
+                    <p>
+                        <input type="checkbox" id="kidsguide" name="guideAdventure" value="yes">
+                        <label for="kidsguide"></label>
+                    </p>
+                
+
+
+
+                <p class="inputbox">
+                    <label>Durstion Of Time</label>
+                    <input type="number" placeholder="Hours" id="duration" name="duration" min="1" value="0"><br>
+                </p>
+                <fieldset >
+                    <legend>Cost of Adventure</legend>
+                    <p id="costadventure">Rs.00.00</p>
+                </fieldset>
+                <fieldset>
+                        <p id="currentcost1">
+                        </p>
+                     <!--cost of Adventure-->
+
+                </fieldset>
+            </fieldset>
+
+            <div class="bf-footer">
+                <button id="Advenbutton">Book Aventure</button>
+            </div>
+
+        </form>
+        <div class="aarah-footer">
+           
+        
+            <ul class="list">
+                <li>
+                    <a href="./Home.html">Home</a>
+                </li>
+                <li>
+                    <a href="./gallery.htm">Gallery</a>
+                </li>
+                <li>
+                    <a href="./Home.html">About</a>
+                </li><li>
+                    <a href="./dining.html">Dinning</a>
+                </li><li>
+                    <a href="./wedding.html">Wedding</a>
+                </li>
+            </ul>
+        
+        <p class="copywrite">
+        
+        All Copyrights Reserved By Araliya beach Resort - © 2023
+        </p>
+        
+    </div>   
+    <script src="./booking.js"></script>
+</body>
+
+</html>
